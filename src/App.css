@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: white;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.617919) 0%, #c0c0c4 100%);
+    background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputForm {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputForm input {
+    width: 50%;
+    margin: 2px;
+    padding-left: 10px;
+    font-style: italic;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.inputForm button {
+    margin: 2px;
+    width: 5%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    padding-top: 5px;
 }
+
+.todosLeft {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+
+.todo button {
+    height: 100%;
+}
+
+.todo .todoText {
+    padding: 2px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+}
+
+.actionGlobal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media all and (max-width: 1000px) {
+    .inputForm input {
+        width: 70%;
+    }
+    .inputForm button {
+        width: 10%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .inputForm input {
+        width: 80%;
+    }
+    .inputForm button {
+        width: 20%;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .todo .todoText {
+        font-size: 0.8rem;
+    }
+    .actionGlobal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*# sourceMappingURL=App.css.map */
